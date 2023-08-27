@@ -6,6 +6,8 @@ import boardgame.Position;
 import chess.pieces.King;
 import chess.pieces.Rook;
 
+import java.util.InputMismatchException;
+
 public class ChessMatch {
 
     private Board board;
