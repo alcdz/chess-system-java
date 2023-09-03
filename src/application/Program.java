@@ -51,6 +51,10 @@ public class Program {
                 System.out.println(e.getMessage());
                 sc.nextLine();
             }
+            catch (NullPointerException e){
+                System.out.println("There is no piece in position");
+                sc.nextLine();
+            }
         }
         UI.clearScreen();
         UI.printMatch(chessMatch,captured);

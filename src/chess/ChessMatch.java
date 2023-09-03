@@ -242,7 +242,7 @@ public class ChessMatch {
     }
 
     private void validateSourcePosition (Position position){
-        if (!board.positionExists(position)){
+        if (!board.positionExists(position) && board.thereIsAPiece(position)){
             throw new ChessException("There is no piece on source position");
         }
         if (currentPlayer != ((ChessPiece)board.piece(position)).getColor()){
